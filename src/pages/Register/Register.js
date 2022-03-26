@@ -124,26 +124,16 @@ const Register = () => {
         </div>
         <div className={styles.registerWallpaper}>
           <div className={styles.registerWallpaperCont}>
-            <div className={styles.mainDiv}>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div>
-                <div>
-                  <img
-                    src="https://images.unsplash.com/file-1636585210491-f28ca34ea8ecimage"
-                    alt="landingPage"
-                    height={600}
-                    width={600}
-                  />
-                </div>
-              </div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
+            <div></div>
+            <img
+              src="https://images.unsplash.com/file-1636585210491-f28ca34ea8ecimage"
+              alt="landingPage"
+              height={600}
+              width={600}
+            />
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,13].map((_, idx) => {
+              return <div key={idx}></div>;
+            })}
           </div>
         </div>
       </div>
