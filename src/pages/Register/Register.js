@@ -25,10 +25,8 @@ const Register = () => {
             <div className={styles.logoDiv}>Logo</div>
             <div className={styles.formContainer}>
               <p>
-                <h1>Log in</h1>
-                <span>
-                  Log in with your data that you entered during registration
-                </span>
+                <h1>Create an account</h1>
+                <span>Tell us a little about yourself</span>
               </p>
               <form>
                 <div className={styles.formGroup}>
