@@ -2,14 +2,14 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import routes from "./routes";
-// import AuthRoute from "./authRoutes";
+import AuthRoute from "./authRoutes";
 import ProtectedRoute from "./protectedRoutes";
 // import PublicRoute from "./publicRoutes";
 
 const getRouteType = ({ element, type }) => {
   const routeType = {
-    // authenticated: <AuthRoute>{element}</AuthRoute>,
-    // public: <PublicRoute>{element}</PublicRoute>,
+      // public: <PublicRoute>{element}</PublicRoute>,
+    authenticated: <AuthRoute>{element}</AuthRoute>,
     protected: <ProtectedRoute>{element}</ProtectedRoute>,
   };
 
